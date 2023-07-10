@@ -1,0 +1,38 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="pms" />
+            <item index="1" class="java.lang.String" itemvalue="Requests" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E722" />
+          <option value="E225" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="polls.models.Choice.objects" />
+          <option value="polls.models.Question.objects" />
+          <option value="dapi.models.Product.objects" />
+          <option value="dapi.models.Order.objects" />
+          <option value="property.__base__" />
+          <option value="blog.models.Post.DoesNotExist" />
+          <option value="restsite.store.models.Cart.id" />
+          <option value="restsite.store.models.Product.objects" />
+          <option value="restsite.store.models.Cart.objects" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

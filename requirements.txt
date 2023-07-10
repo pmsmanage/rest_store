@@ -1,0 +1,8 @@
+Django==4.2.1
+django_taggit==4.0.0
+djangorestframework==3.14.0
+djangorestframework_simplejwt==5.2.2
+pytest-django==4.5.2
+psycopg2-binary==2.9.6
+django-cors-headers
+channels==3.0.5

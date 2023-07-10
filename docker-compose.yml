@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  web:
+    image: pmsmanage/restsite:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/restsite
+    depends_on:
+      - db
+    tty: true
+    command: python manage.py runserver 0.0.0.0:8000
+
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
+    ports:
+      - "5432:5432"
+volumes:
+  postgres_data:
